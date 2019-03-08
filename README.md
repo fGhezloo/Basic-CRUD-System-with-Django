@@ -3,7 +3,7 @@
 
 A user can register to the site by visiting http://localhost:8000/register. After registeration, User is redirected to login page.
 
-A token-based authentication is provided for the site. User can login by sending a POST request entering username and password as JSON (http://localhost:8000/login). After logging in, the assigned token to the user would be shown on the screen. From this point, users can perform CRUD by including their token in the request's Authentication header unless they will get an error saying **"Authentication credentials were not provided."**
+A token-based authentication is provided for the site. User can login by sending a POST request entering username and password as JSON (http://localhost:8000/login/). After logging in, the assigned token to the user would be shown on the screen. From this point, users can perform CRUD by including their token in the request's Authentication header unless they will get an error saying **"Authentication credentials were not provided."**
 
 ### CRUD Instructions:
 
