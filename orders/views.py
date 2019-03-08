@@ -4,6 +4,9 @@ from rest_framework.views import APIView
 from .models import Order
 from .serializers import OrderSerializer
 from django.shortcuts import get_object_or_404
+from django.views.decorators.csrf import csrf_exempt
+from rest_framework.authtoken.models import Token
+from rest_framework.decorators import api_view, permission_classes
 
 
 class OrdersView(APIView):
